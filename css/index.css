@@ -149,7 +149,7 @@ b{
 }
 
 .home{
-    background-image: url('/image/mainimg.jpg');
+    background-image: url('../image/mainimg.jpg');
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
