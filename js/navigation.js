@@ -47,7 +47,7 @@ function changes(){
     function droping(){
         if(click == 0){
             click = 1;
-            dwn[0].style.height = "302.9px";
+            dwn[0].style.height = "224px";
             dd[0].style.float="left";
             dd[0].style.transform="rotate(45deg)";
             dd[1].style.display="none";
