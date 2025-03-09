@@ -1,0 +1,93 @@
+@media (max-width:725px){
+    .bg{
+        display: none;
+    }
+    form{
+        width: 100% !important;
+    }
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+.bg{
+    background-image: url('https://blog.ipleaders.in/wp-content/uploads/2020/01/Health-Insurance.jpg');
+    height: 100%;
+    width: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+form{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    background-color: white;
+    width: 380px;
+    border-radius: 10px;
+    border: 1px solid turquoise;
+    margin: 10px;
+}
+.title{
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    background-color: turquoise;
+    border-radius: 5px 5px 0 0;
+}
+.row{
+    margin: 15px;
+    background-color: turquoise;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    height: 47px;
+}
+
+.row input{
+    width: 100%;
+    outline: none;
+    border: 1px solid lightgray;
+    font-size: 15px;
+}
+
+.row i{
+    width: 50px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row input[type="submit"]{
+    cursor: pointer;
+}
+
+#tosignup, #tologin{
+    padding: 0 15px 15px;
+}
+
+#tosignup a, #tologin a{
+    padding: 0;
+}
+
+a{
+    color: turquoise;
+    text-decoration: none;
+    padding-left: 17px;
+}
+
+a:hover{
+    color: turquoise;
+    text-decoration: underline;
+
+}

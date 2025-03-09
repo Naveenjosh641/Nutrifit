@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This page is about nutritios food, healthy diet and exersises.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <script src="js/navigation.js"></script>
+        
+        <link rel="icon" href="image/myimg.jpg">
+        <title>NutriFit</title>
+    </head>
+    <body>
+        <!-- header setion -->
+        <div id="navi"></div>
+
+        <!-- Home page -->
+        <div class="home bg">
+            <div class="para">
+            <h1>The doctor of the future will no longer treat the human frame with drugs, 
+                but rather will cure and prevent disease with nutrition.</h1>
+            </div>
+            <div class="button"><a style="padding: 10px 15px;" href="#bmi">Get Fit Today</a></div>   
+        </div>
+
+        <!-- What We Do -->
+        <div id="wwd">
+            
+        </div>
+
+        <!-- About Us -->
+        <div id="abtus">
+            <center>
+                <div class="head"><b>About Us</b></div><br>
+                <p id="abtnote">
+                    NutriFit is a holistic health platform dedicated to enhancing individual wellness through a range of personalized services. At its core, NutriFit employs a BMI calculator that allows users to input their height and weight, swiftly generating their Body Mass Index (BMI). This crucial metric serves as a foundation for NutriFit's customized approach, tailoring diet plans and exercise regimens specifically to each user's BMI results.<br><br><br>
+
+                    By leveraging this data, NutriFit provides targeted nutritional advice designed to meet diverse health goals, whether users seek weight loss, maintenance of a healthy lifestyle, or muscle gain. Each diet plan is meticulously crafted to align with nutritional needs, ensuring balanced and effective dietary choices.<br><br><br>
+                    
+                    Furthermore, NutriFit goes beyond diet alone by offering meticulously curated exercise routines. These workouts are calibrated to complement the user's BMI profile, optimizing fitness efforts and supporting overall health objectives.<br><br><br>
+                    
+                    In essence, NutriFit empowers individuals on their journey towards improved fitness and well-being by delivering personalized guidance, practical tools, and comprehensive support. Whether users aspire to shed pounds, sustain a healthy lifestyle, or build muscle mass, NutriFit stands ready to facilitate their progress with tailored solutions that prioritize individual health and wellness.<br><br><br><br>
+                </p>
+            </center>
+        </div>
+
+        <!-- Body Mass Index -->
+        <div id="bmi">
+        <center>
+            <div class="head"><b>Body Mass Index</b></div>
+            <p style="font-size: 20px; width: 85%; margin-bottom: 40px;">Body Mass Index (BMI) measures body fat based on weight and height. 
+                A high BMI can indicate high body fatness. <br>BMI screens for weight categories that may lead to health problems, 
+                but it does not diagnose the body fatness or health of an individual.
+            </p>
+        </center>
+            <form name="fbmi" onsubmit="funbmi(event)">
+                <div class="bmi">
+                    <p>Height</p>
+                    <!-- <input type="number" name="centimeters" placeholder="in CMs" required> -->
+                     <div id="height">
+                        <input type="number" name="feet" placeholder="ft" required>
+                        <input type="number" name="inches" placeholder="in">
+                    </div>
+                    <p>Weight</p>
+                    <input type="number" name="kilograms" placeholder="KG" required>
+                    <input type="submit" name="bmibtn" value="BMI">
+                </div>
+            </form>
+        <center>
+            <div id="bmiphidden">
+                <p id="bmipchange"></p>
+                <!-- <p>Scroll down to explore the diet plans and exercise categories that best suit you</p> -->
+                <p><a href="login.html">Login</a> to discover how personalized diet and fitness plans can help address your health concerns and achieve your goals.</p>
+            </div>
+        </center>
+        </div>  
+        
+        <!-- Diet -->
+        <div id="diet">
+            <center><div class="head"><b>Diet Plan</b></div></center>
+            <div class="blocks">
+                <div class="imgcrp">
+                <img src="image/myimg.jpg" alt="A man is confused about what to eat for his dietary needs." style="user-select: none;">
+                </div>
+                <div class="para">
+                    <p> <b>Diet</b> is the sum of food consumed by a person, varying based on individual needs and goals: </p>
+                    <ul style="margin-top: 0;">
+                        <li>An <b>underweight</b> person may require a calorie-dense, nutrient-rich diet to gain weight</li>
+                        <li>A person of <b>normal weight</b> needs a balanced diet to maintain health</li>
+                        <li>An <b>overweight</b> person might focus on calorie control and nutrient density to lose weight</li>
+                        <li>A person with <b>obesity</b> may need a structured, often medically supervised diet to achieve significant weight loss and address related health issues.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercies -->
+        <div id="exer">
+            <center><div class="head"><b>Exercies</b></div></center>
+            <div class="btns">
+                <div class="btn">
+                    <button type="button" id="btn1" onclick="w(0, 'lightblue')"><p>UnderWeight</p></button>
+                    <button type="button" id="btn2" onclick="w(1, 'lightgreen')"><p>NormalWeight</p></button>
+                </div>
+                <div class="btn">
+                    <button type="button" id="btn3" onclick="w(2, 'orange')"><p>OverWeight</p></button>
+                    <button type="button" id="btn4" onclick="w(3, 'red')"><p>Obesity</p></button>
+                </div>
+            </div>
+            
+            <div class="bun">
+                <div class="sub">
+                    <div class="temp"><p>Cardio</p></div>           <!-- 0 -->
+                    <div class="temp"><p>Calisthenics</p></div>     <!-- 1 -->
+                </div>
+                <div class="sub">
+                    <div class="temp"><p>HIIT</p></div>             <!-- 2 -->
+                    <div class="temp"><p>Plyometrics</p></div>      <!-- 3 -->
+                </div>
+            </div>
+            <div class="jam">
+                <div class="temp l"><p>Strength</p></div>           <!-- 4 -->
+                <div class="temp"><p>Flexibility</p></div>          <!-- 5 -->
+                <div class="temp r"><p>Balance</p></div>            <!-- 6 -->
+            </div>
+            <div class="bun">
+                <div class="sub">
+                    <div class="temp"><p>Stability</p></div>        <!-- 7 -->
+                    <div class="temp"><p>Resistance</p></div>       <!-- 8 -->
+                </div>
+                <div class="sub">
+                    <div class="temp"><p>Low-Impact</p></div>       <!-- 9 -->
+                    <div class="temp"><p>Water Aerobics</p></div>   <!-- 10 -->
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Contact -->
+        <div id="contact">
+            <center><div class="head"><b>Contact</b></div></center>
+            <div class="mypro">
+                <div class="para">
+                    <div style="display: flex; align-items: baseline;"><p>Reach me out for any queries</p><span>|</span></div>
+                    <div>
+                        <a href="mailto:mr.santhosh116@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/m-n-santhosh"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/santh0shh__"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://github.com/santh0shh"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/santh0shh._/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100049355566217"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; perspective: 500px;">
+                    <div class="myimg"><img src="image/me.jpg" alt="my profile photo"></div>
+                    <h2>Naga Santhosh Meesala</h2>
+                    <h2>8639724488</h2>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/bmi.js"></script>
+    <script src="js/buttons.js"></script>
+    
+</html>

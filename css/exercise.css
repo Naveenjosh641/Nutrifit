@@ -1,0 +1,115 @@
+@media(max-width:1010px){
+    .sbs .hvr{
+        margin: 0;
+    }
+}
+@media(max-width:850px){
+    .sbs img{
+        width: 300px !important;
+        height: 200px !important;
+    }
+    .sbs b{
+        font-size: 45px !important;
+    }
+    .sbs p{
+        width: unset !important;
+    }
+}
+@media(max-width: 650px){
+    .sbs{
+        flex-direction: column !important;
+    }
+    .sbs .hvr{
+        margin: 30px 0 0 !important;
+    }
+    .sbs b{
+        margin-top: 15px;
+    }
+    .sbs p{
+        padding: 0 60px 30px !important;
+    }
+}
+@media(max-width: 425px){
+    .sbs p{
+        width: 300px !important;
+        padding: 0 !important;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 320px){
+    .sbs .hvr{
+        display: flex;
+        justify-content: center;
+    }
+    .sbs img{
+        width: 95% !important;
+        height: auto !important;
+    }
+    .sbs b{
+        font-size: 15vw !important;
+    }
+    .sbs p{
+        width: 95% !important;
+    }
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.sbs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rev{
+    flex-direction: row-reverse;
+}
+.hvr{
+    position: relative;
+    margin: 0px 200px;
+    transition: 1s;
+}
+.sbs img{
+    width: 400px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px;
+    transition: 1.5s;
+}
+.rev img{
+    box-shadow: 4px 4px 2px;
+}
+.sbs b{
+    font-size: 60px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    cursor: default;
+}
+.sbs p{
+    width: 600px;
+    font-size: 22px;
+    padding: 0 40px;
+}
+
+#btm p{
+    padding: 40px 0 60px;
+    font-size: 30px;
+    text-align: center;
+}
+#btm a{
+    background: linear-gradient(to right, var(--primary-color), var(--secondry-color));
+    background-clip: text;
+    color: transparent;
+}
+#btm a:hover{
+    text-decoration: underline;
+    text-decoration-color: turquoise;
+}

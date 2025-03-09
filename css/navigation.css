@@ -1,0 +1,191 @@
+@media(max-width:660px){
+    #header .lheader::before{
+        content: "NF";
+    }
+    #header .lheader a{
+        visibility: hidden;
+        width: 0;
+    }
+}
+@media (max-width:575px){
+    #header .lheader{
+        display: none !important;
+    }
+    #header .down{
+        float: unset;
+        margin: 75px auto 0 auto;
+        border-radius: 10px;
+        height: 0;
+        overflow: hidden;
+        border: 1px solid white;
+        transition: 0.5s;
+    }
+    #header .rheader{
+        float: unset;
+        border: 1px solid white;
+        margin: 0;
+        background-color: black;
+    }
+    #header .rheader a{
+        width: 100%;
+        text-align: center;
+    }
+    .rheader::before {
+        display: none; 
+    }
+    .rheader:hover::before {
+        width: 0%; 
+        transition: none; 
+    }
+    .rheader a:hover {
+        text-shadow: none; 
+    }
+    #dropdown{
+        display: block !important;
+        margin: 20px;
+        transition: 0.5s;
+    }
+    #dropdown button{
+        transition: 0.5s;
+        height: 32px;
+    }
+}
+@media(max-width:425px){
+    #header{
+        height: 50px !important;
+    }
+    #header #login{
+        height: 65% !important;
+        margin: 8px !important;
+    }
+    #header .down{
+        margin-top: 0;
+        width: 99%;
+    }
+    #dropdown{
+        margin: 8px;
+    }
+}
+@media(max-width:320px){
+    h1, p, li{
+        font-size: unset !important;
+    }
+}
+
+@media(max-height:350px){
+    h1, b, p{
+        font-size: unset !important;
+    }
+    a{
+        font-size:initial !important;
+    }
+}
+
+:root{
+    --primary-color: #32cd32;
+    --secondry-color: #1e90ff;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navi{
+    height: 75px;
+}
+
+.rheader, #login{
+    font-family: "Roboto",sans-serif;
+}
+
+#header{
+    height: 75px; 
+    width: 100%; 
+    position: fixed; 
+    background-color: rgba(0,0,0,0.75);
+    top: 0;
+    transition: top 0.5s ease;
+    z-index: 1;
+}
+.lheader{
+    height: 100%; 
+    font-size: 50px; 
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.lheader::before, .lheader a, .rheader:nth-child(3) a{
+    background: linear-gradient(to right, var(--primary-color), var(--secondry-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#login{
+    background-color: blue;
+    border-radius: 5px;
+    height: 50%;
+    margin: 18px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+#login a{
+    padding: 10px 20px;
+    color: white;
+}
+#login:hover{
+    background-color: darkblue;
+    transition: 0.4s;
+}
+
+.down{
+    float: right;
+}
+.rheader{
+    font-size: 20px; 
+    float: left;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    position: relative;
+}
+.rheader a{
+    padding: 25px 0;
+    color: var(--primary-color);
+}
+.rheader:nth-child(4) a{
+    color: var(--secondry-color);
+}
+
+.rheader::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(to right, var(--primary-color), var(--secondry-color));
+    position: absolute;
+    bottom: 20px;
+}
+.rheader:hover::before{
+    width: 100%;
+    transition: 0.2s;
+}
+
+
+#dropdown{
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+#dropdown .line{
+    height: 5px;
+    width: 25px;
+    background-color: black;
+    margin: 3px 0;
+    border-radius: 1px;
+}
